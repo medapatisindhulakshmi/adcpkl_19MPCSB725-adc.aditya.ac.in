@@ -1,0 +1,21 @@
+import java.util.*;
+import java.lang.*;
+import java.io.*;
+import java.math.BigInteger;
+public class Main
+{
+	public static void main (String[] args)
+	{
+		Scanner in = new Scanner(System.in);
+		int t = in.nextInt();
+		for (int i = 0; i < t; i++) {
+		    int n = in.nextInt();
+		    BigInteger p = BigInteger.ONE;
+		    for (int j = 1; j <= n; j++) {
+		        p = p.multiply(BigInteger.valueOf(j));
+		    }
+		  
+		    System.out.println(p);
+		}
+	}
+}
