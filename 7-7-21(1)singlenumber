@@ -1,0 +1,15 @@
+class Main{ 
+    static int singleElement(int[] a, int n){
+        int single = a[0]; 
+        for(int i=1; i<n; i++) 
+            single = single ^ a[i]; 
+        return single;
+    }
+    public static void main (String[] args){ 
+        int a[]= {4,1,2,1,2}; 
+        int n = a.length; 
+        System.out.println(singleElement(a, n)); 
+    } 
+} 
+output:
+4
