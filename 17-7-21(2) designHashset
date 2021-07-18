@@ -1,0 +1,22 @@
+class MyHashSet {
+    int[] map = new int[12132222];
+    public MyHashSet() 
+    {
+        
+    }
+    public void add(int key) 
+    {
+        map[key] = 1;
+    }
+    public void remove(int key) 
+    {
+        map[key] = 0;
+    }
+    public boolean contains(int key) 
+    {
+        if(map[key] == 1) return true;
+        return false;
+    }
+}
+output:
+[null,null,null,true,false,null,true,null,false]
